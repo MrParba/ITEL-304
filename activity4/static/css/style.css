@@ -1,5 +1,5 @@
 h1{
-    border: 2px #EEEEEE solid;
+    border: 2px #00fdcc solid;
     color: #b43030;
     text-align: center;
     padding: 20px;
@@ -16,7 +16,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #0079FEFF;
     position: fixed;
     top: 0;
     width: 100%;
@@ -26,11 +26,11 @@ li {
 }
 li a {
     display: block;
-    color: white;
+    color: #f9f6f6;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 li a:hover:not(.active) {
-    background-color: #111;
+    background-color: #00FDC2FF;
 }
