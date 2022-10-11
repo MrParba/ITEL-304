@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <!-- Bootrap CSS-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootsrap/4.3.1/css/bootstrap.main.css" integrity="sha384-ggOyR0iXCbMQv3xipma34MD+dH/1fQ784/iJTQUOhhcWr7x97voRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="{{ url_for('static', filename= 'js/script.js')}}">
+        <title>FlaskBlog</title>
+    </head>
+    <body>
+    {% extends 'base.html' %}
+
+    {% block content %}
+        <h1>{% block title %} Welcome To My Website {% endblock %}</h1>
+            {% for post in posts %}
+                <a href="#">
+                    <h2>{ post['title'] }</h2>
+                </a>
+                <span class="badge badge-primary">{ post['created'] }</span>
+                <hr>
+        {% endfor %}
+    {% endblock %}
+    </body>
+</html>
